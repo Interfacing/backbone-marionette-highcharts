@@ -1,8 +1,5 @@
-(function() {
-  var Models = Marionette.HighCharts.models;
-
-  var Serie = Marionette.HighCharts.models.Serie = Backbone.Model.extend({
-
+(function(Models) {
+  Models.Serie = Backbone.Model.extend({
     constructor: function (attrs) {
       Backbone.Model.prototype.constructor.apply(this, arguments);
       this.highChartsId = (attrs || {}).highChartsId || parseInt(_.uniqueId());
@@ -19,8 +16,8 @@
   });
 
 
-  Marionette.HighCharts.models.SerieCollection = Backbone.Collection.extend({
-    model: Serie,
+  Models.SerieCollection = Backbone.Collection.extend({
+    model: Models.Serie,
 
     toHighChartsData: function () {
       return this.map(function (serie) {
@@ -28,4 +25,4 @@
       });
     }
   });
-})();
+})(Marionette.HighCharts.models);
