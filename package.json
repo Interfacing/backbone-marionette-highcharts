@@ -1,0 +1,32 @@
+{
+  "name": "backbone-marionette-highcharts",
+  "description": "A Backbone Marionette Wrapper around HighCharts",
+  "version": "0.1.0",
+  "keywords": [
+    "marionette",
+    "backbone",
+    "highcharts",
+    "chart"
+  ],
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
+  "dependencies": {
+    "backbone": "1.1.2",
+    "backbone.marionette": "2.4.1",
+    "jquery": "2.1.3",
+    "underscore": "1.8.3",
+    "grunt": "0.4.5",
+    "grunt-mincer": "1.0.0",
+    "grunt-karma": "0.10.1",
+    "grunt-contrib-less": "1.0.0",
+    "grunt-contrib-uglify": "0.8.0",
+    "grunt-contrib-jshint": "0.11.0",
+    "grunt-contrib-cssmin": "0.12.2",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-protractor-runner": "1.2.1",
+    "karma-chrome-launcher": "0.1.7",
+    "karma-firefox-launcher": "0.1.4",
+    "karma-jasmine": "0.3.5"
+  }
+}

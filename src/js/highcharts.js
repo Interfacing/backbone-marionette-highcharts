@@ -1,0 +1,4 @@
+Marionette.HighCharts = {
+  views: {},
+  models: {}
+};
