@@ -85,6 +85,9 @@ Override `highChartsEvents` to handle [chart's events](http://api.highcharts.com
 
 ## Changelog
 
+##### Version 0.2.1
+  - Fix onRender
+
 ##### Version 0.2.0
   - Add option to use highstock (See demo basic-highstock)
   
