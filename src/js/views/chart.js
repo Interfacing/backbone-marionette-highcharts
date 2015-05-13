@@ -35,7 +35,7 @@
     },
 
     onRender: function() {
-      this.$el.highCharts().redraw();
+      this.$el.highcharts().redraw();
     },
 
     bindHighChartsEvents: function() {
