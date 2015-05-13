@@ -12,18 +12,26 @@
       }, {}, this);
     },
 
-    initialize: function() {
+    initialize: function(options) {
+      options = options || {};
+      this.stockChart = options.stockChart || false;
       this.initializeHighCharts();
       this.bindHighChartsEvents();
     },
 
     initializeHighCharts: function() {
-      this.$el.highcharts($.extend(true, {
+      var highChartsOptions = $.extend(true, {
         series: this.collection.toHighChartsData(),
         chart: {
           events: this.getHighChartsEvents()
         }
-      }, this.model.toJSON()));
+      }, this.model.toJSON());
+
+      if (this.stockChart) {
+        this.$el.highcharts('StockChart', highChartsOptions);
+      } else {
+        this.$el.highcharts(highChartsOptions);
+      }
     },
 
     onRender: function() {

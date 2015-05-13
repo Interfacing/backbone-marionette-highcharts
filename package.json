@@ -1,7 +1,7 @@
 {
   "name": "backbone-marionette-highcharts",
   "description": "A Backbone Marionette Wrapper around HighCharts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "marionette",
     "backbone",

@@ -8,7 +8,7 @@
   
 ## Dependencies
   - Marionette 2.x.x.
-  - HighCharts 4.1.4
+  - HighCharts 4+
 
 ## Installation
 Include dependencies then the javascript file:
@@ -85,5 +85,8 @@ Override `highChartsEvents` to handle [chart's events](http://api.highcharts.com
 
 ## Changelog
 
+##### Version 0.2.0
+  - Add option to use highstock (See demo basic-highstock)
+  
 ##### Version 0.1.0
   - Initial commit
