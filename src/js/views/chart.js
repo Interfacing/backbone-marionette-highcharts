@@ -34,7 +34,7 @@
       }
     },
 
-    onRender: function() {
+    onShow: function() {
       this.$el.highcharts().redraw();
     },
 
