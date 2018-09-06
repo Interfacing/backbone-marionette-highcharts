@@ -29,6 +29,8 @@
 
       if (this.stockChart) {
         this.$el.highcharts('StockChart', highChartsOptions);
+      } else if (this.map) {
+        this.$el.highcharts('Map', highChartsOptions);
       } else {
         this.$el.highcharts(highChartsOptions);
       }
